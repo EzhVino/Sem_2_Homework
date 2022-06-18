@@ -32,42 +32,56 @@
 // Программа принимает на вход трехзначное число, показывает вторую цифру числа
 
 // int SecondDigit(int number){
-//    int result = (number % 100) / 10;
-//    return result;  
+//     int result = (number % 100) / 10;
+//     return result;  
 //     }
-// 
+
 // Console.WriteLine("Введите трехзначное число:");
 // int num = Convert.ToInt32(Console.ReadLine());
+// if(num<0){
+//     num = num * -1;}
 // if(num>100 && num<1000){
-// Console.WriteLine("Вторая цифра " + SecondDigit(num));
-// }else{
+// Console.WriteLine("Вторая цифра " + SecondDigit(num));}
+// else{
 // Console.WriteLine("Вы ввели не трехзначное число");
 // }
 
 //Программа выводит третью цифру числа или сообщает, что третьей нет
 
-// Console.WriteLine("Введите трехзначное число:");
-// int num = Convert.ToInt32(Console.ReadLine());
-// int ThirdDigit(int number){
-//    int result = number % 10;
-//    return result;  
+
+// void ThirdNum(int num){
+//     while(num>999){
+//         num = num / 10;
+//         }
+//     int thirdNumber = num % 10;
+//     Console.WriteLine("Третья цифра " + thirdNumber);
+//     }
+
+// Console.WriteLine("Введите число:");
+// int number = Convert.ToInt32(Console.ReadLine());
+// if(number<0){
+//         number = number * -1;}
+// if(number>0 && number<100){
+//     Console.WriteLine("Третьей цифры нет");}
+// else{
+//     ThirdNum(number);
 //     }
 
 //Программа принимает на вход цифру дня недели, проверяет, выходной ли
 
-void Weekend(int dayNumber){
-    if(dayNumber == 6 || dayNumber == 7){
-        Console.WriteLine("Ура, выходной!");
-    }else{
-        Console.WriteLine("Не выходной :(");
-    }
-}
+// void Weekend(int dayNumber){
+//     if(dayNumber == 6 || dayNumber == 7){
+//         Console.WriteLine("Ура, выходной!");
+//     }else{
+//         Console.WriteLine("Не выходной :(");
+//     }
+// }
 
-Console.WriteLine("Введите порядковый номер дня недели:");
-int num = Convert.ToInt32(Console.ReadLine());
-if(num>1 && num<8){
-Weekend(num);
-}else{
-Console.WriteLine("Нет такого дня недели");
-}
+// Console.WriteLine("Введите порядковый номер дня недели:");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if(num>1 && num<8){
+// Weekend(num);
+// }else{
+// Console.WriteLine("Нет такого дня недели");
+// }
 
